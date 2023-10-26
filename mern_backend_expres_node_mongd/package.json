@@ -1,7 +1,7 @@
 {
   "name": "mern-simplesetup",
   "version": "3.0.0",
-  "description": "A quick check for your MERN stack installation",
+  "description": "Build the MERN Backend with MongoDB, Express, and Node.js",
   "author": "Michael O",
   "license": "MIT",
   "keywords": [
@@ -13,14 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Michle99/mern-simplesetup.git"
+    "url": "https://github.com/Michle99/Full-Stack-React-Projects/tree/master/mern_backend_expres_node_mongd"
   },
-  "homepage": "https://github.com/Michle99/mern-simplesetup",
+  "homepage": "https://github.com/Michle99/Full-Stack-React-Projects/tree/master/mern_backend_expres_node_mongd",
   "main": "template.js",
   "scripts": {
-    "development": "nodemon",
-    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "start": "NODE_ENV=production node ./dist/server.generated.js"
+    "development": "nodemon"
   },
   "engines": {
     "node": "13.12.0",
@@ -28,7 +26,12 @@
   },
   "dependencies": {
     "@hot-loader/react-dom": "16.13.0",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "express": "4.17.1",
+    "helmet": "3.22.0",
     "mongodb": "3.5.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -37,7 +40,6 @@
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.0",
-    "@babel/preset-react": "7.9.4",
     "babel-loader": "8.1.0",
     "nodemon": "2.0.2",
     "webpack": "4.42.1",
