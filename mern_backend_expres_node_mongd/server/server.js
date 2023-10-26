@@ -10,12 +10,6 @@ mongoose.connect(config.mongoUri, {
 })
 
 
-
-// making the root template available
-// app.get('/', (req, res) => {
-//   res.status(200).send(template())
-// })
-
 let port = config.port || 3000
 app.listen(config.port, function onStart(err) {
   if (err) {
