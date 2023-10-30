@@ -5,6 +5,7 @@ import compress from 'compression';
 import cors from 'cors';
 import helmet from 'helmet';
 import Template from './../template'
+import userRoutes from './routes/user.routes';
 
 // define the express app
 const app = express();
@@ -13,6 +14,9 @@ const app = express();
 app.get('/', (req, res) => {
   res.status(200).send(Template());
 });
+
+// User Routes
+app.use('/', userRoutes);
 
 /** configure express */
 app.use(bodyparser.json());
