@@ -45,7 +45,7 @@ UserSchema.path('hashed_password').validate(function(v) {
     if (this.isNew && !this._password) {
       this.invalidate('password', 'Password is required')
     }
-}, null)
+}, null);
   
 UserSchema.methods = {
     authenticate: function(plainText) {
