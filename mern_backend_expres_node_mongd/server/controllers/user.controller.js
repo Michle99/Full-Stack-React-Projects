@@ -1,6 +1,6 @@
 import User from '../models/user.model'
 import extend from 'lodash'
-import errorHandler from './error.controller'
+import errorHandler from '../helpers/dbErrorHandler'
 
 
 const create = async (req, res) => { 
