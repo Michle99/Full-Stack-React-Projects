@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 import expressJwt from 'express-jwt'
 import config from '../../config'
 
-const sigin = async (req, res) => {
+const signin = async (req, res) => {
     try {
         let user = await User.findOne({ "email": req.body.email });
         if(!user)
@@ -30,7 +30,12 @@ const sigin = async (req, res) => {
     }
 }
 
-const signout = (req, res) => {}
+const signout = (req, res) => {
+    res.clearCookie("t");
+    return res.status('200').json({
+        message: "Signed Out"
+    })
+}
 
 const requireSignin = {}
 
