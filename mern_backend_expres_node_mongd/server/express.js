@@ -29,5 +29,14 @@ app.use(compress());
 app.use(helmet());
 app.use(cors());
 
+// Auth error handling for express-jwt
+app.use((err, req, next) => {
+  if (err.name === 'UnauthorizedError') {
+    res.status(401).json({ "error": err.name + ": " + err.message });
+  } else if (err) {
+    res.status(400).json({ "error": err.name + ": " + err.message });
+    console.log("Error: ", err);
+  }
+});
 
 export default app;
