@@ -6,6 +6,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import Template from './../template'
 import userRoutes from './routes/user.routes';
+import authRoutes from './routes/auth.routes'
 
 // define the express app
 const app = express();
@@ -17,6 +18,8 @@ app.get('/', (req, res) => {
 
 // User Routes
 app.use('/', userRoutes);
+// Restrict access to user operations
+app.use('/', authRoutes)
 
 /** configure express */
 app.use(bodyparser.json());
