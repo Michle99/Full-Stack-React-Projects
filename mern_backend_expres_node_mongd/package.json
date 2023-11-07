@@ -1,8 +1,8 @@
 {
-  "name": "mern-skeleton",
+  "name": "mern-full-stack-application",
   "version": "2.0.0",
   "description": "A MERN stack skeleton web application",
-  "author": "Shama Hoque",
+  "author": "Michael O",
   "license": "MIT",
   "keywords": [
     "react",
@@ -13,9 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shamahoque/mern-skeleton.git"
+    "url": "https://github.com/Michle99/Full-Stack-React-Projects/tree/master/mern_backend_expres_node_mongd"
   },
-  "homepage": "https://github.com/shamahoque/mern-skeleton",
+  "homepage": "https://github.com/Michle99/Full-Stack-React-Projects/tree/master/mern_backend_expres_node_mongd",
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",

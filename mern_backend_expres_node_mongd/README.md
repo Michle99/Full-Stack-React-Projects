@@ -8,7 +8,7 @@ A backend application with basic user CRUD and auth features - developed using R
 2. NPM (6.14.4) or Yarn (1.22.4)
 3. MongoDB (4.2.0)
 
-### API Testing Screenshots
+### Backend API Testing Screenshots
 ##### GET REQUEST: List Users
 <img src="./mern_setup_pics/list_users.png" width="90%">
 
@@ -16,21 +16,23 @@ A backend application with basic user CRUD and auth features - developed using R
 ##### POST REQUEST: Post new User
 <img src="./mern_setup_pics/post_new_users.png" width="90%">
 
-#### POST RESPONSE: New User in MongoDB
+##### POST RESPONSE: New User in MongoDB
 <img src="./mern_setup_pics/new_user_in_mongodb.png" width="90%">
 
 
-#### GET RESPONSE: Get User without Authorization
+##### GET RESPONSE: Get User without Authorization
 <img src="./mern_setup_pics/single_user_error.png" width="90%">
 
 
-#### GET RESPONSE: Get Single User without Authorization Token
+##### GET RESPONSE: Get Single User without Authorization Token
 <img src="./mern_setup_pics/signin_user.png" width="90%">
 
 
-#### GET RESPONSE: Successful User Signin
+##### GET RESPONSE: Successful User Signin
 <img src="./mern_setup_pics/success_user_signin.png" width="90%">
 
+
+### Frontend Application
 
 ###  How to run this code
 1. Make sure MongoDB is running on your system
